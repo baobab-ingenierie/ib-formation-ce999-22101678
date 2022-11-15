@@ -78,8 +78,66 @@ h2 + p , dt + dd {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* PSEUDO-CLASSES*/
+/* Pour la balise a : link, visited, hover, active */
+#navBar {
+    background: black;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    margin-top: 3rem;
+}
 
+#navBar a:link, #navBar a:visited {
+    color: inherit;
+}
 
+#navBar a:hover {
+    font-weight: bold;
+}
+
+#navBar a {
+    text-decoration: none;
+}
+
+/* Tableau ayant 50% de largeur du doc et affichage bordure */
+table {
+    /* width: 50%; */
+    width: 50vw;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: black solid .1rem;
+}
+
+tbody tr:first-child {
+    background: yellow;
+}
+
+tbody tr:last-child {
+    background: lightgreen;
+}
+
+tbody tr:nth-child(2) {
+    background: lightskyblue;
+}
+
+/* 2n ou even = pair */
+tbody tr:nth-of-type(2n) {
+    background: pink;
+}
+
+/* 2n+1 ou odd = impair */
+tbody tr:nth-of-type(2n+1) {
+    background: salmon;
+}
+
+tbody tr:hover {
+    background: goldenrod;
+    cursor: pointer;
+}
 
 
 

@@ -8,10 +8,10 @@ Dates : 14 au 18 novembre 2022
 
 ## Contenu
 
-- [ ] HTML/CSS : Rappels (slides 3 à 29)
-- [ ] HTML5/CSS3 : La révolution du web (slides 138 à 142)
+- [x] HTML/CSS : Rappels (slides 3 à 29)
+- [x] HTML5/CSS3 : La révolution du web (slides 138 à 142)
 - [ ] HTML5/CSS3 : Le balisage (slides 143 à 149)
-- [ ] HTML5/CSS3 : CSS3 (slides 233 à 260)
+- [x] HTML5/CSS3 : CSS3 (slides 233 à 260)
 - [ ] HTML5/CSS3 : Vidéo et Audio (slides 161 à 167)
 - [ ] HTML5/CSS3 : Les formulaires (slides 150 à 160)
 - [ ] JavaScript : Rappels (slides 30 à 34)
