@@ -1,0 +1,20 @@
+/* RAZ des valeurs par défaut */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Couleurs natives */
+    background: salmon;
+    background: #f5166e;
+    /* Couleurs calculées */
+    background: rgb(255,255,0);
+    background: hsl(220, 100%, 50%);
+}
+
+/* CONTAINER */
+#container {
+    height: 50vh;
+    /* Transparence */
+    background: rgba(255, 255, 0, 0.5);
+    background: hsla(0,100%,50%, 0.5);
+    background: #ffffff7f;
+}
