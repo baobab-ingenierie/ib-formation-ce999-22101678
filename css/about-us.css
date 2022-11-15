@@ -1,0 +1,86 @@
+/* SELECTEURS DE BASE : BALISE */
+h1 {
+    color: brown;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Donner une couleur différente à h2 et h3 */
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+img {
+    /* width: 20rem; */
+    height: 10rem;
+    border: black solid .1rem;
+    margin: .5rem;
+    box-shadow: .25rem .25rem 0 gray;
+}
+
+/* Ombre portée sur h1 à h4 en gris tout autour du texte */
+h1,h2,h3,h4 {
+    text-shadow: 0 0 .25rem white, 0 0 1rem black;
+}
+
+/* SELECTEURS DE BASE : CLASS */
+.redText {
+    color: red;
+}
+
+.italicText {
+    font-style: italic;
+}
+
+.codeStyle {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* SELECTEURS DE BASE : ID */
+/* #id (100) > .class (10) > tag (1) */
+#htop {
+    color: green;
+}
+
+h1 {
+    color: yellow !important;
+}
+
+/* SELECTEURS HIERARCHIQUES : PARENT > ENFANT */
+ol > li {
+    list-style: upper-roman;
+    font-style: italic;
+}
+
+/* SELECTEURS HIERARCHIQUES : ASCENDANT DESCENDANT */
+
+/* dl {
+    margin: 1rem;
+    margin: 1rem 2rem;
+    margin: 1rem 2rem 3rem;
+    margin: 1rem 2rem 3rem 4rem;
+} */
+
+dl dt {
+    /* margin-top: .5rem;
+    margin-bottom: .5rem; */
+    margin: .5rem 0;
+}
+
+/* SELECTEURS HIERARCHIQUES : FRERE + SOEUR */
+h2 + p , dt + dd {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
