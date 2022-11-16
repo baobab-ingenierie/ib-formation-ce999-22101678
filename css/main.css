@@ -1,3 +1,6 @@
+/* DIRECTIVES CSS TOUJOURS EN PREMIER*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kaushan+Script&display=swap');
+
 /* RAZ des valeurs par défaut */
 body {
     margin: 0;
@@ -10,11 +13,107 @@ body {
     background: hsl(220, 100%, 50%);
 }
 
+.bg-agency {
+    background: url('../pics/bg-wall.jpg') fixed;
+    background-size: cover;
+}
+
 /* CONTAINER */
 #container {
-    height: 50vh;
+    min-height: 100vh;
     /* Transparence */
     background: rgba(255, 255, 0, 0.5);
     background: hsla(0,100%,50%, 0.5);
     background: #ffffff7f;
 }
+
+/* INDEX - HEADER */
+#enTete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 7rem;
+}
+
+#titre {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+    margin: 0;
+}
+
+/* INDEX - MENU */
+#menu {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#menu .menuItem a {
+    color: #fff; /* #fff équivaut à #ffffff */
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: .75rem;
+    display: block;
+    margin: .25rem 0;
+    border: #000 solid .25rem;
+    background: linear-gradient(#555, #000);
+    transition: all 1s;
+}
+
+#menu .menuItem a:hover {
+    border: #00f solid .25rem;
+    background: linear-gradient(#55f, #00f);
+    text-shadow: 0 0 .5rem #fd0;
+}
+
+/* INDEX - SECTION TEAM */
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member {
+    width: 20rem;
+    border: #000 solid .25rem;
+    text-align: center;
+    padding: 1rem;
+    background: #0cfa;
+    margin: 1rem;
+}
+
+.member img {
+    width: 100%;
+}
+
+.member a {
+    text-decoration: none;
+    color: #000;
+    border: #fd0 solid .25rem;
+    background: linear-gradient(#ff0, #fd0);
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+/* INDEX - VIDEO */
+#multimedia {
+    width: 80vw;
+    margin: 1rem auto;
+}
+
+#multimedia video {
+    width: 100%;
+}
+
+
+
+
+

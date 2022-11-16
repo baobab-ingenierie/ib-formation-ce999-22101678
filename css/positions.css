@@ -1,0 +1,54 @@
+div[id^=box] {
+    width: 10rem;
+    height: 10rem;  
+    border: #000 solid .5rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.box {
+    width: 3rem;
+    height: 3rem;  
+    border: #000 solid .5rem;
+    margin: .5rem;
+    background: #0ff;
+}
+
+#box1 {
+    background: #f00;
+    position: static;
+    top: 10rem;
+    left: 10rem;
+}
+
+#box2 {
+    background: #0f0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#box2 .box {
+    position: absolute;
+    bottom: 0;
+}
+
+#box3 {
+    background: #00f;
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+}
+
+#box4 {
+    background: #ff0;
+    position: sticky;
+    top: 10rem;
+}
+
+#box5 {
+    background: #f0f;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
