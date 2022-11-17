@@ -18,6 +18,11 @@ body {
     background-size: cover;
 }
 
+h2,h3 {
+    font-family: 'Kaushan Script',cursive;
+    text-align: center;
+}
+
 /* CONTAINER */
 #container {
     min-height: 100vh;
@@ -73,7 +78,7 @@ body {
 }
 
 /* INDEX - SECTION TEAM */
-#team {
+#teamMembers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
