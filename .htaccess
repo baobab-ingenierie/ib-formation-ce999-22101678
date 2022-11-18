@@ -1,0 +1,6 @@
+# Gestion des erreurs HTTP
+ErrorDocument 403 /my-app/403.html
+ErrorDocument 404 /my-app/404.html
+
+# Désactivation de l'exploration des dossiers
+Options All -Indexes

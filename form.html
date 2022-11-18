@@ -40,7 +40,92 @@
         <!-- Emmet : div.form-group>label+input:text.form-control#prenom -->
         <div class="form-group">
             <label for="prenom">Prénom</label>
-            <input type="text" name="prenom" id="prenom" class="form-control" minlength="1" maxlength="20" required placeholder="Entrez uniquement votre prénom" pattern="[a-zA-Z\u00c0-\u00ff\s\-]{1,20}">
+            <input type="text" name="prenom" id="prenom" class="form-control" minlength="1" maxlength="20" required
+                placeholder="Entrez uniquement votre prénom" pattern="[a-zA-Z\u00c0-\u00ff\s\-]{1,20}" autofocus>
+        </div>
+
+        <div class="form-group">
+            <label for="ddn">Date de naissance</label>
+            <input type="date" name="ddn" id="ddn" class="form-control">
+        </div>
+
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="p1" name="permis" value="OUI" selected>
+            <label for="p1">J'ai le permis</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="p2" name="permis" value="NON">
+            <label for="p2">Je n'ai pas le permis</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="p3" name="permis" value="NSP">
+            <label for="p3">Je préfère ne pas le dire</label>
+        </div>
+
+        <div class="form-group">
+            <label for="courriel">Courriel</label>
+            <input type="email" name="courriel" id="courriel" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="region">Région</label>
+            <select name="region" id="region" class="custom-select">
+                <option value="">--- Sélectionnez votre région ---</option>
+                <option value="PACA">Provence Alpes Côte d'Azur</option>
+                <option value="OCCI">Occitanie</option>
+                <option value="IDF">Ile de France</option>
+                <option value="HDF">Hauts de France</option>
+                <option value="EUR">Autres</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cp">Code postal</label>
+            <input type="number" name="cp" id="cp" class="form-control" min="01000" max="99999" step="1000" value="">
+        </div>
+
+        <div class="form-group">
+            <label for="salaire">Prétention salariale</label>
+            <input type="range" name="salaire" id="salaire" class="form-control" min="3000" max="9000" step="100"
+                value="5200">
+            <small class="form-text text-muted" id="salaireVal"></small>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="postes[]" id="job1" class="form-check-input" value="FRONT">
+            <label for="job1">Développeur front-end</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="postes[]" id="job2" class="form-check-input" value="BACK">
+            <label for="job2">Développeur back-end</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="postes[]" id="job3" class="form-check-input" value="FRONT">
+            <label for="job3">Développeur full-stack</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="postes[]" id="job4" class="form-check-input" value="PM">
+            <label for="job4">Chef de projets</label>
+        </div>
+
+        <div class="form-group">
+            <label for="favo">Couleur favorite</label>
+            <input type="color" name="favo" id="favo">
+        </div>
+
+        <div class="form-group">
+            <label for="cv">CV au format texte</label>
+            <textarea name="cv" id="cv" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="cv2">CV au format PDF</label>
+            <input type="file" name="cv2" id="cv2" class="form-control-file" accept="application/pdf, application/word">
         </div>
 
         <input type="submit" class="btn btn-primary">
@@ -85,6 +170,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script>
+        // Assigne au range et au small une variable objet
+        var sal = document.getElementById('salaire');
+        var salVal = document.getElementById('salaireVal');
+
+        // Fonction qui associe la valeur du range à small
+        function getValue() {
+            salVal.textContent = sal.value;
+        }
+
+        // Associe l'événement change au contrôle range
+        sal.onchange = function () {
+            getValue();
+        };
+
+        // Associe l'événement click au contrôle range
+        // sal.onclick = function () {
+        //     getValue();
+        // };
+
+        // Associe l'événement mousemove au contrôle range
+        sal.onmousemove = function () {
+            getValue();
+        };
+
+        // Associe l'événement chargement au document
+        window.onload = function () {
+            getValue();
+        }
+    </script>
 </body>
 
 </html>
