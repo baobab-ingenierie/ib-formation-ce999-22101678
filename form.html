@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Entièrement réalisée avec Bootstrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidature avec Bootstrap</title>
+    <link rel="shortcut icon" href="pics/logo.png" type="image/x-icon">
+
+    <!-- Liaison avec le CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="container">
+    <!-- Jumbotron -->
+    <header class="jumbotron my-3 bgImage">
+        <h1 class="display-4">Nous rejoindre</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam consectetur sed libero
+            reprehenderit. Facilis sit repudiandae cupiditate aut delectus, itaque voluptatum. Optio, repellat fuga?
+            Natus, sit necessitatibus? Hic, nesciunt.</p>
+        <a href="index.html" class="btn btn-success btn-lg">Accueil</a>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="about-us.html">Qui sommes-nous ?</a></li>
+            <li class="breadcrumb-item active" aria -current="page">Candidature</li>
+        </ol>
+    </nav>
+
+    <!-- Form -->
+    <form action="form-send.php" method="post" class="my-5">
+        <!-- Emmet : div.form-group>label+input:text.form-control#prenom -->
+        <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" class="form-control" minlength="1" maxlength="20" required placeholder="Entrez uniquement votre prénom" pattern="[a-zA-Z\u00c0-\u00ff\s\-]{1,20}">
+        </div>
+
+        <input type="submit" class="btn btn-primary">
+    </form>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pics/slide1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pics/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pics/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pics/slide4.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </button>
+    </div>
+
+    <!-- Liaison avec le JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
